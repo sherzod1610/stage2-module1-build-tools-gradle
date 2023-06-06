@@ -17,7 +17,6 @@ publishing {
 // provide groupId
 // provide artifactId
 // provide version
-
             from components.java
         }
     }
