@@ -6,7 +6,7 @@ group = 'com.example.demo' // provide the desired group
 version = '1.0.0' // provide the desired version
 
 repositories {
-    // provide the repository where required dependencies are located
+    mavenCentral()
 }
 
 dependencies {
