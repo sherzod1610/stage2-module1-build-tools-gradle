@@ -1,4 +1,18 @@
-//add everything here
+plugins {
+    id 'java' // id for the Java plugin
+}
+
+group = 'com.example.demo' // provide the desired group
+version = '1.0.0' // provide the desired version
+
+repositories {
+    // provide the repository where required dependencies are located
+}
+
+dependencies {
+    implementation 'com.example.utils:utils:1.3.5'
+    implementation project(path: ':utils') // provide the groupId, artifactId, and version of the 'utils' library
+}
 
 test {
     useJUnitPlatform()
