@@ -4,7 +4,7 @@ public class StringUtils {
     public static boolean isPositiveNumber(String str) {
         boolean x = false;
         for (char c: str.toCharArray()) {
-            if (!Character.isDigit(c) || c == '.'){
+            if (!Character.isDigit(c) && !(c == '.')){
                 x = false;
                 break;
             }else {
